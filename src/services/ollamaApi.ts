@@ -1,6 +1,6 @@
 import { OllamaRequest, OllamaResponse, ModelsResponse } from '../types/chat';
 
-const OLLAMA_BASE_URL = 'http://localhost:11434';
+const OLLAMA_BASE_URL = import.meta.env.VITE_OLLAMA_URL;
 
 export class OllamaService {
   private static instance: OllamaService;
